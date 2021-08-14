@@ -6,20 +6,20 @@
 
 import { createTestModel } from './utils';
 
-import { ExampleModel } from '..';
+import { LifeModel } from '..';
 
-describe('Example', () => {
-  describe('ExampleModel', () => {
+describe('ipylife', () => {
+  describe('LifeModel', () => {
     it('should be createable', () => {
-      const model = createTestModel(ExampleModel);
-      expect(model).toBeInstanceOf(ExampleModel);
+      const model = createTestModel(LifeModel);
+      expect(model).toBeInstanceOf(LifeModel);
       expect(model.get('value')).toEqual('Hello World');
     });
 
     it('should be createable with a value', () => {
       const state = { value: 'Foo Bar!' };
-      const model = createTestModel(ExampleModel, state);
-      expect(model).toBeInstanceOf(ExampleModel);
+      const model = createTestModel(LifeModel, state);
+      expect(model).toBeInstanceOf(LifeModel);
       expect(model.get('value')).toEqual('Foo Bar!');
     });
   });

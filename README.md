@@ -7,6 +7,9 @@
 
 A Jupyter widget for the Game of Life
 
+## Current Version
+[`v0.1.0`](https://github.com/afshin/ipylife/releases/tag/v0.1.0) - This version is just a placeholder and does not work.
+
 ## Installation
 
 You can install using `pip`:
